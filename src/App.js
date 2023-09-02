@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import TeamList from "./components/teamList";
 import AddTeam from "./components/teamAdd";
 import "bootswatch/dist/solar/bootstrap.min.css";
+
 import Navigation from "./components/navBar";
 
 function App() {
