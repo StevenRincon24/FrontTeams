@@ -1,3 +1,59 @@
+
+# Taller Colaborativo GraphQL
+
+Este repositorio aloja el código del frontend React utilizado en un contexto de gestión de equipos deportivos de fútbol. El frontend se encarga de proporcionar una interfaz de usuario intuitiva para interactuar con el [backend GraphQL][back] permitiendo a los usuarios realizar operaciones de consulta, creación, actualización y eliminación de equipos deportivos.
+
+## Consideraciones de uso
+
+Para utilizar este proyecto, siga los siguientes pasos:
+
+- Clonar este repositorio.
+- Ejecutar npm install para instalar las dependencias.
+- Ejecutar npm start para iniciar el servidor (puerto **3000**).
+
+## Dependencias principales
+
+El proyecto utiliza las siguientes dependencias principales:
+
+- "@apollo/client": "^3.8.2",
+- "@apollo/react-hooks": "^4.0.0",
+- "@testing-library/jest-dom": "^5.17.0",
+- "@testing-library/react": "^13.4.0",
+- "@testing-library/user-event": "^13.5.0",
+- "apollo-boost": "^0.4.9",
+- "bootstrap": "^5.3.1",
+- "bootswatch": "^5.3.1",
+- "graphql": "^15.8.0",
+- "graphql-tag": "^2.12.6",
+- "react": "^18.2.0",
+- "react-apollo": "^3.1.5",
+- "react-bootstrap": "^2.8.0",
+- "react-bootstrap-modal": "^4.2.0",
+- "react-dom": "^18.2.0",
+- "react-router-dom": "^6.15.0",
+- "react-scripts": "5.0.1",
+- "web-vitals": "^2.1.4"
+## Funcionamiento General
+
+- **Consulta de Equipos:** El frontend realiza una consulta GraphQL para obtener la lista de equipos deportivos desde el backend. Utiliza la consulta definida en GET_TEAMS en el archivo teamList.js.
+
+- **Eliminación de Equipos:** Los usuarios pueden eliminar equipos seleccionando el botón "Eliminar" asociado a cada equipo. Se utiliza la mutación DELETE_TEAM definida en el archivo teamList.js para llevar a cabo esta operación.
+
+- **Actualización de Equipos:** Los usuarios pueden modificar los detalles de un equipo haciendo clic en el botón "Modificar". Esto abre un modal que permite editar los campos del equipo y guardar los cambios. La mutación UPDATE_TEAM se utiliza para actualizar la información del equipo.
+
+- **Creación de Equipos:** Los usuarios pueden crear nuevos equipos utilizando el formulario en la parte superior de la página. Cuando se guarda un nuevo equipo, se utiliza la mutación CREATE_TEAM definida en el archivo teamForm.js.
+
+- **Gestión de Errores:** Se manejan errores y se muestran mensajes de error apropiados en caso de problemas durante las operaciones
+
+## Consideraciones finales
+
+Este proyecto se creó con fines académicos para aplicar los conocimientos adquiridos sobre el uso de GraphQL y Apollo Client en el curso Electiva II.
+
+Realizado por:
+
+- Hovar Steven Rincón Vianchá
+- Andrés Iván Sierra Espinel
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +124,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+[back]: https://github.com/StevenRincon24/ApiGraphQL,
